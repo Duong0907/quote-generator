@@ -1,18 +1,19 @@
 # Quote Generator Documentation
+
 ## **Create quotes**
 1. Method: ```POST```
-2. URL: ```https://quote-generator.onrender.com/api/```
+2. Endpoint: ```https://quote-generator-iks2.onrender.com/api/```
 3. Body: 
 ```
 [
     {
-    "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
-    "author": "Thomas Edison"
-  },
-  {
-    "text": "You can observe a lot just by watching.",
-    "author": "Yogi Berra"
-  }
+        "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+        "author": "Thomas Edison"
+    },
+    {
+        "text": "You can observe a lot just by watching.",
+        "author": "Yogi Berra"
+    }
 ]
 
 ```
@@ -34,19 +35,25 @@
 }
 ```
 
-## **Get a random quotes**
+
+
+## **Get random quotes**
 1. Method : ```GET```
-2. URL: ```https://quote-generator.onrender.com/api/```
+2. Endpoint: ```https://quote-generator-iks2.onrender.com/api/```
+3. Params: 
+    * *number* (required) : int
 3. Result: 
 ```
 {
-    "message": "Get random quote successfully",
+    "message": "Get random quotes successfully",
     "error": false,
     "data": {
-        "quote": {
-            "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
-            "author": "Thomas Edison"
-        }
+        "quotes": [
+            {
+                "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+                "author": "Thomas Edison"
+            }
+        ]
     }
 }
 ```
