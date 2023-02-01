@@ -30,7 +30,7 @@ func main() {
 	api.POST("/", CreateQuotes)
 	api.GET("/", GetQuotes)
 
-	router.Run("localhost:8080")
+	router.Run()
 }
 
 func CreateQuotes(ctx *gin.Context) {
