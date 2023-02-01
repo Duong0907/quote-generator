@@ -1,7 +1,7 @@
 # Quote Generator Documentation
 ## **Create quotes**
 1. Method: ```POST```
-2. URL: ```/api/```
+2. URL: ```https://quote-generator.onrender.com/api/```
 3. Body: 
 ```
 [
@@ -36,7 +36,7 @@
 
 ## **Get a random quotes**
 1. Method : ```GET```
-2. URL: ```/api/```
+2. URL: ```https://quote-generator.onrender.com/api/```
 3. Result: 
 ```
 {
