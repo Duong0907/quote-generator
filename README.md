@@ -22,16 +22,18 @@
 {
     "message": "Create quotes successfully",
     "error": false,
-    "data": [
-        {
-            "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
-            "author": "Thomas Edison"
-        },
-        {
-            "text": "You can observe a lot just by watching.",
-            "author": "Yogi Berra"
-        }
-    ]
+    "data": {
+        "quotes": [
+            {
+                "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+                "author": "Thomas Edison"
+            },
+            {
+                "text": "You can observe a lot just by watching.",
+                "author": "Yogi Berra"
+            }
+        ]
+    }
 }
 ```
 
