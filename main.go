@@ -25,6 +25,7 @@ func main() {
 	log.Println("MONGODB CONNECTED")
 
 	router := gin.Default()
+	router.Use(CorsMiddleware)
 	api := router.Group("/api")
 
 	api.POST("/", CreateQuotes)
@@ -79,6 +80,12 @@ func CreateQuotes(ctx *gin.Context) {
 			"quotes": quotes,
 		},
 	})
+}
+
+func CorsMiddleware(ctx *gin.Context) {
+	header := ctx.Writer.Header()
+	header.Add("Access-Control-Allow-Origin", "*")
+	ctx.Next()
 }
 
 func GetQuotes(ctx *gin.Context) {
